@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website LC", "Website LC\Website LC.csproj", "{A526105E-F844-402D-989E-F03B68D00344}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_BusinessEntities", "MVC_BusinessEntities\MVC_BusinessEntities.csproj", "{33DE494A-C4C3-4982-9DBD-502DE0D34207}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_DataAccessLayer", "MVC_DataAccessLayer\MVC_DataAccessLayer.csproj", "{F1F5CEFD-D245-4540-B5D7-8D01F3E202B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A526105E-F844-402D-989E-F03B68D00344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A526105E-F844-402D-989E-F03B68D00344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A526105E-F844-402D-989E-F03B68D00344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A526105E-F844-402D-989E-F03B68D00344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33DE494A-C4C3-4982-9DBD-502DE0D34207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33DE494A-C4C3-4982-9DBD-502DE0D34207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33DE494A-C4C3-4982-9DBD-502DE0D34207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33DE494A-C4C3-4982-9DBD-502DE0D34207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F5CEFD-D245-4540-B5D7-8D01F3E202B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F5CEFD-D245-4540-B5D7-8D01F3E202B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F5CEFD-D245-4540-B5D7-8D01F3E202B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F5CEFD-D245-4540-B5D7-8D01F3E202B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

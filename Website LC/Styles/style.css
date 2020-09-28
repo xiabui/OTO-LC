@@ -1,0 +1,173 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    background-color: #ebebeb;
+    
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.container{
+    width: 450px;
+    height: 70vh;
+    padding: 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 77px 55px 33px 55px;
+    background: white;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.login{
+    width: 100%;
+    display: block;
+    align-items: center;
+    /* font-size: 20px; */
+}
+
+.head{
+    margin-bottom: 5px;
+    font-size: 20px;
+    /* margin-top: 50px; */
+}
+
+.fas{
+    margin-right: 10px;
+}
+
+input{
+    width: 100%;
+    font-size: 16px;
+    /* border-top: transparent;
+    border-left: transparent;
+    border-right: transparent; */
+    border: 1px solid #adadad;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background: transparent;
+    padding: 0 5px;
+    line-height: 2.5;
+    color: #555555;
+    /* display: block; */
+}
+
+    input[type=text]:focus, input[type=password]:focus {
+        border: 1px solid red !important;
+        /* box-shadow:  0 0 1px red !important;
+    -moz-box-shadow: 0 0 3px red !important;
+    -webkit-box-shadow: 0 0 3px red !important; */
+        outline-offset: 0px !important;
+        outline: none !important;
+    }
+
+.btn-signin button {
+    font-family: Poppins;
+    margin-top: 10px;
+    /* text-decoration: none; */
+    color: white;
+    cursor: pointer;
+    background: red;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    padding: 0 5px;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    line-height: 225%;
+    border: transparent;
+}
+
+.btn-signin button:hover, .btn-signin button:active{
+    background: black;
+}
+
+.signup{
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.signup a{
+    color: red;
+    text-decoration: none;
+}
+
+.forget-pass{
+    text-align: right;
+    font-size: 14px;
+    margin-top: -16px;
+}
+
+.forget-pass a{
+    text-decoration: none;
+    color: red;
+}
+
+.connect{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn-fb button{
+    font-size: 16px;
+    border: 1px solid blue;
+    color: blue;
+    padding: 0 5px;
+    height: 45px;
+    width: 40%;
+    background-color: transparent;
+}
+
+.btn-fb button .fab{
+    margin-right: 5px;
+}
+
+.btn-fb button:hover, .btn-fb button:active{
+    background-color: blue;
+    color: white;
+    outline-offset: 0px !important;
+    outline: none !important;
+}
+
+.btn-gg button{
+    font-size: 16px;
+    border: 1px solid red;
+    color: red;
+    padding: 0 5px;
+    height: 45px;
+    width: 40%;
+    background-color: transparent;
+}
+
+.btn-gg button .fab{
+    margin-right: 5px;
+}
+
+.btn-gg button:hover, .btn-gg button:active{
+    background-color: red;
+    color: white;
+    outline-offset: 0px !important;
+    outline: none !important;
+}
+
+.btn-fb {
+    margin-top: 15px;
+}
+
+.btn-gg {
+    margin-top: -45px;
+    text-align: right;
+}
