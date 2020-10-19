@@ -7,7 +7,7 @@
     <title>Sign in</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet"/>
-    <link href="~/Styles/style.css" rel="stylesheet" type="text/css" media="screen" runat="server" />
+    <link href="~/Styles/style-login.css" rel="stylesheet" type="text/css" media="screen" runat="server" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"/>
 </head>

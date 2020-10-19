@@ -68,7 +68,6 @@ C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website
 C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\Microsoft.AI.Web.xml
-C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\obj\Debug\Website LC.csprojResolveAssemblyReference.cache
 C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\obj\Debug\Website LC.dll
 C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\obj\Debug\Website LC.pdb
 C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\MVC_BusinessEntities.dll
@@ -76,3 +75,65 @@ C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website
 C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\MVC_BusinessEntities.pdb
 C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\MVC_DataAccessLayer.pdb
 C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\MVC_DataAccessLayer.dll.config
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\x86\sqlcese40.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\x86\sqlceqp40.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\x86\sqlceme40.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\x86\sqlceer40EN.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\x86\sqlcecompact40.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\x86\sqlceca40.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\amd64\sqlcese40.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\amd64\sqlceqp40.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\amd64\sqlceme40.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\amd64\sqlceer40EN.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\amd64\sqlcecompact40.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\amd64\sqlceca40.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\Autofac.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\CKSource.CKFinder.Connector.Config.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\CKSource.CKFinder.Connector.Core.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\CKSource.CKFinder.Connector.Host.Owin.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\CKSource.CKFinder.Connector.KeyValue.EntityFramework.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\CKSource.CKFinder.Connector.KeyValue.FileSystem.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\CKSource.CKFinder.Connector.Logs.NLog.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\CKSource.FileSystem.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\CKSource.FileSystem.Local.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\ImageProcessor.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\Microsoft.Owin.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\NLog.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\Owin.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\Pri.LongPath.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\System.Data.SqlServerCe.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\System.Net.Http.Extensions.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\System.Net.Http.Formatting.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\System.Net.Http.Primitives.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\System.ValueTuple.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\Autofac.pdb
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\Autofac.xml
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\CKSource.CKFinder.Connector.Config.xml
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\CKSource.CKFinder.Connector.Core.xml
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\CKSource.CKFinder.Connector.Host.Owin.xml
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\CKSource.CKFinder.Connector.KeyValue.EntityFramework.xml
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\CKSource.CKFinder.Connector.Logs.NLog.xml
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\CKSource.FileSystem.xml
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\CKSource.FileSystem.Local.xml
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\ImageProcessor.xml
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\Microsoft.Owin.xml
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\NLog.xml
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\System.ValueTuple.xml
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\ApplicationInsights.config
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\System.Numerics.Vectors.dll
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\bin\System.Numerics.Vectors.xml
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\obj\Debug\Website LC.csprojAssemblyReference.cache
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\obj\Debug\Website LC.csproj.CoreCompileInputs.cache
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\Website LC\obj\Debug\Website LC.csproj.CopyComplete

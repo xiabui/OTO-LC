@@ -1,173 +1,294 @@
-*{
-    padding: 0px;
+﻿@charset "utf-8";
+
+/* CSS Document */
+
+* {
+    font-family: 'Lato', sans-serif;
     margin: 0px;
-    box-sizing: border-box;
+    padding: 0px;
 }
 
-html{
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    background-color: #ebebeb;
-    
+header {
+    background-color: #eeeeee;
     width: 100%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 0px auto;
+    height: 145px;
 }
 
-.container{
-    width: 450px;
-    height: 70vh;
-    padding: 15px;
-    margin: 0 auto;
+#logo {
+    float: left;
+    height: 145px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* align-items: center; */
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 77px 55px 33px 55px;
-    background: white;
-    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.3);
-}
-
-.login{
-    width: 100%;
-    display: block;
     align-items: center;
-    /* font-size: 20px; */
 }
 
-.head{
-    margin-bottom: 5px;
-    font-size: 20px;
-    /* margin-top: 50px; */
-}
-
-.fas{
-    margin-right: 10px;
-}
-
-input{
-    width: 100%;
-    font-size: 16px;
-    /* border-top: transparent;
-    border-left: transparent;
-    border-right: transparent; */
-    border: 1px solid #adadad;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    background: transparent;
-    padding: 0 5px;
-    line-height: 2.5;
-    color: #555555;
-    /* display: block; */
-}
-
-    input[type=text]:focus, input[type=password]:focus {
-        border: 1px solid red !important;
-        /* box-shadow:  0 0 1px red !important;
-    -moz-box-shadow: 0 0 3px red !important;
-    -webkit-box-shadow: 0 0 3px red !important; */
-        outline-offset: 0px !important;
-        outline: none !important;
+    #logo img {
+        width: 372px;
+        margin-left: 165px;
     }
 
-.btn-signin button {
-    font-family: Poppins;
-    margin-top: 10px;
-    /* text-decoration: none; */
-    color: white;
+#dn {
+    float: right;
+    margin-right: 160px;
+    margin-top: 20px;
+}
+
+    #dn a {
+        font-size: 13px;
+        padding: 5px;
+        text-decoration: none;
+        color: #e2232e;
+        font-size: 16px;
+        margin-right: 10px;
+        font-weight: 600;
+    }
+
+header #dn a:hover {
+    color: black;
     cursor: pointer;
-    background: red;
+}
+
+.btn-sell {
+    margin-top: 60px;
+    float: right;
+}
+
+    .btn-sell button {
+        height: 54px;
+        width: 241px;
+        margin-right: -215px;
+        border: none;
+        background-color: black;
+    }
+
+        .btn-sell button a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            .btn-sell button a i {
+                margin-right: 10px;
+                color: #e2232e;
+            }
+
+                .btn-sell button a i:hover {
+                    margin-right: 10px;
+                    color: white;
+                }
+
+            .btn-sell button:hover,
+            .btn-sell button a:hover {
+                background-color: #e2232e;
+                cursor: pointer;
+                color: white;
+                cursor: pointer;
+            }
+
+nav {
+    clear: both;
+    background-color: rgb(255, 255, 255);
+    height: 73px;
     width: 100%;
-    height: 45px;
-    font-size: 16px;
-    padding: 0 5px;
-    display: inline-block;
-    justify-content: center;
-    text-align: center;
-    font-weight: 500;
-    line-height: 225%;
-    border: transparent;
+    margin: 0;
+    padding: 0;
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.btn-signin button:hover, .btn-signin button:active{
-    background: black;
+    nav #subnav {
+        width: 1200px;
+        max-height: 73px;
+        margin: 0px 110px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* justify-items: center; */
+        /* padding-left: 15px;
+	padding-right: 15px; */
+        overflow: hidden;
+    }
+
+        nav #subnav ul {
+            float: left;
+            list-style: none;
+            padding: 0;
+            margin-left: 50px;
+            /* margin-top: -10px; */
+        }
+
+            nav #subnav ul li {
+                float: left;
+                padding: 73px 0px;
+                text-align: center;
+                box-sizing: border-box;
+                background-color: white;
+                /* background-color: #9e783a; */
+                /* border: 0px 1px solid #e2232e; */
+            }
+
+                nav #subnav ul li a,
+                nav #subnav ul li .dropbtn {
+                    display: inline-block;
+                    color: black;
+                    font-size: 16px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    text-decoration: none;
+                    font-weight: bold;
+                    padding: 10px 35px;
+                    border-left: 1px solid rgb(177, 170, 170);
+                    /* border-right: 1px solid #e2232e; */
+                    border-bottom: 3px solid transparent;
+                    height: 73px;
+                    display: flex;
+                    align-items: center;
+                }
+
+    nav > #subnav > ul > li > a:hover,
+    nav > #subnav > ul > li > a:active,
+    nav > #subnav > ul > li > a:active
+    /*, nav #subnav ul li .dropdown:hover nav>#subnav>ul>li>.dropbtn*/ {
+        background-color: #eeeeee;
+        color: #e2232e;
+        border-bottom: solid black;
+    }
+
+    nav > #subnav > ul > li > a::after {
+        display: block;
+        content: '';
+        border-bottom: solid 3px black;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+    }
+
+    nav > #subnav > ul > li > a:hover::after {
+        transform-origin: 0% 50%;
+        cursor: pointer;
+    }
+
+    nav #subnav ul li .dropdown {
+        display: inline-block;
+    }
+
+    nav #subnav ul li .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #eeeeee;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+        nav #subnav ul li .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+    nav #subnav ul li .dropdown .dropdown-content a:hover {
+        background-color: #db7093;
+        color: white;
+        cursor: pointer;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
 }
 
-.signup{
-    font-size: 14px;
-    margin-top: 15px;
+#subnav .active {
+    background-color: #eeeeee;
 }
 
-.signup a{
-    color: red;
-    text-decoration: none;
+    #subnav .active a {
+        color: #e2232e
+    }
+
+.footer-left {
+    margin-left: 160px;
+    margin-top: 20px;
 }
 
-.forget-pass{
-    text-align: right;
-    font-size: 14px;
-    margin-top: -16px;
+    .footer-left p {
+        margin-top: 20px;
+        color: #888888;
+        font-size: 14px;
+    }
+
+.footer-right {
+    float: right;
+    margin-top: -90px;
+    margin-right: 150px;
 }
 
-.forget-pass a{
-    text-decoration: none;
-    color: red;
+    .footer-right ul {
+        list-style: none;
+    }
+
+        .footer-right ul li {
+            float: left;
+        }
+
+            .footer-right ul li a {
+                display: block;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+    .footer-right a:hover, .footer-right .active-footer {
+        color: #e2232e;
+        cursor: pointer;
+    }
+
+.footer-icon {
+    float: right;
+    margin-top: -60px;
+    margin-right: 150px;
 }
 
-.connect{
-    text-align: center;
-    margin-top: 15px;
+    .footer-icon ul {
+        list-style: none;
+    }
+
+        .footer-icon ul li {
+            float: left;
+        }
+
+            .footer-icon ul li a {
+                display: block;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 40px;
+                color: black;
+            }
+
+                .footer-icon ul li a:hover {
+                    color: #e2232e;
+                    cursor: pointer;
+                }
+
+
+/* .footer-icon i .fab{
+    width: 60px;
+} */
+
+footer {
+    background-color: #f3f3f3;
+    height: 178px;
+    padding-top: 10px;
 }
 
-.btn-fb button{
-    font-size: 16px;
-    border: 1px solid blue;
-    color: blue;
-    padding: 0 5px;
-    height: 45px;
-    width: 40%;
-    background-color: transparent;
-}
 
-.btn-fb button .fab{
-    margin-right: 5px;
-}
-
-.btn-fb button:hover, .btn-fb button:active{
-    background-color: blue;
-    color: white;
-    outline-offset: 0px !important;
-    outline: none !important;
-}
-
-.btn-gg button{
-    font-size: 16px;
-    border: 1px solid red;
-    color: red;
-    padding: 0 5px;
-    height: 45px;
-    width: 40%;
-    background-color: transparent;
-}
-
-.btn-gg button .fab{
-    margin-right: 5px;
-}
-
-.btn-gg button:hover, .btn-gg button:active{
-    background-color: red;
-    color: white;
-    outline-offset: 0px !important;
-    outline: none !important;
-}
-
-.btn-fb {
-    margin-top: 15px;
-}
-
-.btn-gg {
-    margin-top: -45px;
-    text-align: right;
-}
+    footer > p {
+        text-align: center;
+        font-size: 17px;
+        margin-top: 5px;
+    }

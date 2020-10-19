@@ -1,5 +1,6 @@
 C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\MVC_BusinessEntities\bin\Debug\MVC_BusinessEntities.dll
 C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\MVC_BusinessEntities\bin\Debug\MVC_BusinessEntities.pdb
-C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\MVC_BusinessEntities\obj\Debug\MVC_BusinessEntities.csprojResolveAssemblyReference.cache
 C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\MVC_BusinessEntities\obj\Debug\MVC_BusinessEntities.dll
 C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\MVC_BusinessEntities\obj\Debug\MVC_BusinessEntities.pdb
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\MVC_BusinessEntities\obj\Debug\MVC_BusinessEntities.csprojAssemblyReference.cache
+C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\MVC_BusinessEntities\obj\Debug\MVC_BusinessEntities.csproj.CoreCompileInputs.cache

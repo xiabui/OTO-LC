@@ -1,0 +1,513 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+div#body {
+    margin-top: 30px;
+    margin-left: 160px;
+    margin-right: 160px;
+    width: 1200px;
+    /* margin:0px auto; */
+    background-color: white;
+    /* box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+article {
+    display: table-row;
+}
+
+aside#left,
+section {
+    display: table-cell;
+    vertical-align: top;
+}
+
+aside#left {
+    max-width: 170px;
+}
+
+section {
+    width: 970px;
+    padding: 0px 8px;
+    position: absolute;
+    margin-left: 23px;
+}
+
+
+/* aside#right{
+	width:200px;
+} */
+
+
+/*Khung, bo goc cho khoi div*/
+
+aside#left > div {
+    color: white;
+    border: transparent;
+    margin-bottom: 10px;
+    padding: 20px 10px 25px;
+}
+
+.box-select {
+    max-height: 553px;
+    /* max-height: 550px; */
+    background-color: #e2232e;
+}
+
+form .box-select {
+    width: 513px;
+    height: 150px;
+}
+
+.box-select .form-label {
+    font-weight: 600;
+    font-size: 14px;
+    height: 21px;
+    width: 150px;
+}
+
+.box-select .form-input {
+    margin-top: 8px;
+    margin-bottom: 15px;
+    width: 150px;
+    height: 35px;
+    border: none;
+    /* position: absolute !important; */
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none !important;
+}
+
+.form-input {
+    font-size: 13px;
+    white-space: pre;
+    color: #777777;
+}
+
+.btn-submit {
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+    height: 54px;
+    width: 150px;
+    border: none !important;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+    .btn-submit[type=submit] {
+        outline: none !important;
+    }
+
+    .btn-submit:hover,
+    .btn-submit:active {
+        background-color: #eeeeee;
+        color: #e2232e;
+        cursor: pointer;
+    }
+
+.banner-left-1 {
+    margin-left: -10px;
+    margin-top: -5px;
+}
+
+.banner-left-1-image {
+    width: 163px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.banner-left-1-box {
+    width: 170px;
+    height: 255px;
+    background-color: black;
+}
+
+.banner-left-1-title {
+    width: 150px;
+    line-height: 1.4;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-weight: 900;
+    padding: 10px 10px 10px;
+}
+
+    .banner-left-1-title a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+        .banner-left-1-title a:hover {
+            color: #e2232e;
+            cursor: pointer;
+        }
+
+.banner-left-1-text {
+    color: #888888;
+    width: 150px;
+    padding: 10px 10px 0;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.banner-left-2 {
+    margin-left: -10px;
+    margin-top: -30px;
+}
+
+
+/* .banner-left-2-image{
+
+} */
+
+.banner-left-2-box {
+    background-color: #e2232e;
+    height: 215px;
+    width: 170px;
+    margin-top: -4px;
+    color: #ffffff;
+}
+
+.banner-left-2-title {
+    width: 150px;
+    font-size: 26px;
+    padding: 25px 10px 10px;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.banner-left-2-phone {
+    width: 150px;
+    font-size: 19px;
+    padding: 10px 10px 0px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.banner-left-2-text {
+    width: 150px;
+    font-size: 13px;
+    padding: 10px 10px 0;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#banner {
+    margin-left: 30px;
+    width: 970px;
+    height: 477px;
+    background-color: rgb(187, 247, 227);
+    position: relative;
+}
+
+    #banner .banner-text-container {
+        position: absolute;
+        width: 970px;
+        height: 135px;
+        background-color: rgba(0, 0, 0, 0.7);
+        top: 342px;
+        /* justify-self: end; */
+    }
+
+    #banner .banner-text {
+        padding: 15px 28px 28px;
+    }
+
+    #banner .banner-text-container .banner-text a {
+        text-decoration: none;
+        color: #e2232e;
+        font-size: 37px;
+        /* white-space: nowrap; */
+        /* overflow:; */
+        /* display: inline-block; */
+    }
+
+.banner-text .banner-text-heading {
+    color: black;
+    /* white-space: nowrap; */
+}
+
+
+/* #banner .cost{
+	color: #e2232e;
+	font-size: 37px;
+	
+	width: 160px;
+	height: 45px;
+} */
+
+#banner .name {
+    position: absolute;
+    color: white;
+    /* font-size: 37px; */
+    /* white-space: nowrap; */
+    top: 15px;
+    left: 220px;
+}
+
+    #banner .name:hover {
+        color: #e2232e;
+        cursor: pointer;
+    }
+
+#banner .banner-text-content {
+    width: 915px;
+    height: 45px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #888888;
+    margin: 3px 0 0;
+}
+
+section {
+    margin-top: 20px;
+    width: 970px;
+}
+
+.tab button {
+    height: 55px;
+    width: 483px;
+    position: relative;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+    .tab button:hover {
+        color: #e2232e;
+        cursor: pointer;
+    }
+
+    .tab button .active1 {
+        background-color: white;
+        color: #e2232e;
+        border-bottom: none;
+    }
+
+.tabcontent {
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*Mau nen, bo hai goc tren, canh le, co chu, mau chu,...*/
+
+
+/* aside#left>div>p{
+	background-color:#ba8c43;
+	border-top-left-radius:2px;
+	border-top-right-radius:2px;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	color:white;
+	height:25px;
+	padding-top:5px;
+} */
+
+
+/* aside#left>div>ul{
+	padding-left:10px;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+aside#left>div>ul>li{
+	height:25px;
+	list-style-position:inside;
+	list-style-image:url(../img/icon_list.jpg);
+	padding-left:5px;
+} */
+
+
+/* aside#left>div>ul>li a{
+	color:#ba8c43;
+	text-decoration:none;
+	
+} */
+
+
+/* aside#left>div>ul>li a:hover{
+	color:#FF0000;
+} */
+
+
+/* aside#right>div{
+	border:1px solid #ba8c43;
+	border-radius:4px;
+	margin-bottom:30px;
+} */
+
+
+/* aside#right>div>p{
+	background-color:#ba8c43;
+	border-top-left-radius:2px;
+	border-top-right-radius:2px;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	color:white;
+	height:25px;
+	padding-top:5px;
+} */
+
+
+/* aside#right>div#muoibannhieu p{
+	clear:both;
+} */
+
+
+/* aside#right>div#muoibannhieu img{
+	width:40px;
+	height:50px;
+	padding-left:5px;
+	float:left;
+	margin-bottom:5px;
+} */
+
+
+/* aside#right>div#muoibannhieu a{
+	text-decoration:none;
+	font-size:9;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#9e783a;
+	height:70px;
+} */
+
+
+/* aside#right>div#muoibannhieu a:hover{
+	font-weight:bold;
+} */
+
+
+/*Dinh dang cho the select o phan lien ket website*/
+
+
+/* aside#right>div#lienketwebsite select{
+	margin:10px;
+	width:170px;
+	height:30px;
+	border-radius:3px;
+	border:#ba8c43 solid 1px;
+	text-align:center;
+} */
+
+
+/* aside#right>div#thongketruycap{
+	background-color:#ecdebe;
+} */
+
+
+/* aside#right>div#thongketruycap h4{
+	margin:10px;
+	color:rgb(138, 39, 0);
+	text-align: center;
+} */
+
+
+/* section>p{
+	Dinh dang nen chuyen mau cho the p
+	background:linear-gradient(#e3c37f,#9e783a,#ba8c43);
+	border-top-left-radius:2px;
+	border-top-right-radius:2px;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	color:white;
+	height:25px;
+	padding-top:5px;
+} */
+
+.car {
+    width: 310px;
+    height: 250px;
+    margin-top: 30px;
+    text-align: left;
+    float: left;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    /* margin-right: 00px; */
+}
+
+.car-img {
+    width: 300px;
+    height: 200px;
+    transition: all 0.5s ease;
+}
+
+.name-car a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.see-all-cars {
+    width: 790px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.btn-see-all-cars {
+    background-color: #e2232e;
+    border: none;
+    outline: none !important;
+    /* padding: 10px 20px 10px; */
+    width: 150px;
+    height: 55px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+    .btn-see-all-cars:hover {
+        background-color: black;
+        cursor: pointer;
+    }
+
+    .btn-see-all-cars a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+/* 
+.car-img:hover{
+	transform:scale(1.1);
+} */
+
+.price {
+    margin-top: 10px;
+}
+
+.price-span {
+    color: #e2232e;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.car-description {
+    font-size: 13px;
+    color: #888888;
+}
