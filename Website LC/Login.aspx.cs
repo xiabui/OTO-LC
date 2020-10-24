@@ -22,8 +22,19 @@ namespace Website_LC
         {
             if(dlLogin.Login(txtUsername.Text.Trim(), txtPassword.Text.Trim()))
             {
-                //Session["username"] = txtUsername.Text.ToString();
-                Response.Redirect("Homepage.aspx");
+                /* Lưu lại thông tin tên của người dùng để có thể kiểm tra
+                 * quyền của người dùng. Chủ yếu để phân biệt giữa người mua
+                 * và người bán. 
+                 */
+
+                //Lưu thông tin người dùng vào session
+                Session["username"] = txtUsername.Text.ToString();
+
+                //Đánh dấu người dùng đã đăng nhập.
+                Session["signed_in"] = 1;
+
+                //Chuyển hướng người dùng sang trang chủ.
+                Response.Redirect("Home.aspx");
             }
             else
             {

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_BusinessEntities", "MVC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_DataAccessLayer", "MVC_DataAccessLayer\MVC_DataAccessLayer.csproj", "{F1F5CEFD-D245-4540-B5D7-8D01F3E202B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{8829BEBA-81F0-4E24-BD36-6CAE8DDB82DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +29,15 @@ Global
 		{F1F5CEFD-D245-4540-B5D7-8D01F3E202B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1F5CEFD-D245-4540-B5D7-8D01F3E202B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1F5CEFD-D245-4540-B5D7-8D01F3E202B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8829BEBA-81F0-4E24-BD36-6CAE8DDB82DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8829BEBA-81F0-4E24-BD36-6CAE8DDB82DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8829BEBA-81F0-4E24-BD36-6CAE8DDB82DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8829BEBA-81F0-4E24-BD36-6CAE8DDB82DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09CA495C-5597-488B-90D3-F200CD7D83C3}
 	EndGlobalSection
 EndGlobal

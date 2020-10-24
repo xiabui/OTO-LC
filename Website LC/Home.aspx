@@ -1,4 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Website_LC.Home" %>
+<asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
+    
+</asp:Content>  
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="body">
         <article>
@@ -109,21 +112,18 @@
                     <button class="tablinks" onclick="openTab(event, 'LASTED-USED-CARS')">LASTED USED CARS</button>
                 </div>
                 <div id="LASTED-NEW-CARS" class="tabcontent">
-                    <asp:ListView ID="ListView2" runat="server">
+                    <asp:ListView ID="ListView2" runat="server" DataSourceID="SqlDataSource1">
                         <ItemTemplate>
                             <div class="car">
                                 <img class="car-img" src="Images/<%# Eval("product_image")%>">
                                 <p class="price"><span class="price-span"><%# Eval("price")%></span></p>
-                                <p class="name-car"><a href="Chitietsanpham.aspx"><%# Eval("product_name")%></a>
+                                <p class="name-car"><a href="Chitietsanpham.aspx?id=<%# Eval("product_id")%>"><%# Eval("product_name")%></a>
                                 </p>
                                 <p class="car-description">Storage amount: <%# Eval("storage_amount")%>.</p>
                             </div>
                         </ItemTemplate>
                      </asp:ListView>
                     <br />
-                    <asp:Label ID="lblPageer" runat="server" />&nbsp;&nbsp;&nbsp;
-                    <asp:LinkButton ID="lnkPrevious" Text="Previous" runat="server" OnClick="Previous" />
-                    <asp:LinkButton ID="lnkNext" Text="Next" runat="server" OnClick="Next" />
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conStr %>" SelectCommand="SELECT * FROM [PRODUCT] WHERE ([used] = @used)">
                         <SelectParameters>
                             <asp:Parameter DefaultValue="False" Name="used" Type="Boolean" />
@@ -151,20 +151,6 @@
                     
                 </div>
                 <script>
-                    function openTab(evt, tabName) {
-                        var i, tabcontent, tablinks;
-                        tabcontent = document.getElementsByClassName("tabcontent");
-                        for (i = 0; i < tabcontent.length; i++) {
-                            tabcontent[i].style.display = "none";
-                        }
-                        tablinks = document.getElementsByClassName("tablinks");
-                        for (i = 0; i < tablinks.length; i++) {
-                            tablinks[i].className = tablinks[i].className.replace(" active1", "");
-                        }
-                        document.getElementById(tabName).style.display = "block";
-                        evt.currentTarget.className += " active1";
-                    }
-                    // document.querySelector('button').addEventListener('click', openTab);
                     document.getElementById("defaultOpen").click();
                 </script>
                 <div class="see-all-cars">

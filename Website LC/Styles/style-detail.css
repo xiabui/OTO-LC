@@ -8,16 +8,6 @@
     padding: 0px;
 }
 
-#body2 {
-    margin-top: 400px;
-    margin-left: 160px;
-    margin-right: 160px;
-    width: 1200px;
-    /* margin:0px auto; */
-    background-color: white;
-    /* box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-}
-
 aside#detail {
     width: 1200px;
 }
@@ -44,16 +34,9 @@ aside#detail {
     color: #e2232e;
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 
-.detail-content ul {
-    list-style: none;
+.detail-content {
+    margin-top: 50px;
 }
-
-    .detail-content ul li {
-        margin-bottom: 8px;
-        color: #666666;
-        font-size: 16px;
-        font-weight: 500;
-    }
