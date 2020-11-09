@@ -33,6 +33,9 @@ namespace Website_LC
                 //Đánh dấu người dùng đã đăng nhập.
                 Session["signed_in"] = 1;
 
+                //
+                Session["user_role"] = dlLogin.GetRole(txtUsername.Text.ToString());
+
                 //Chuyển hướng người dùng sang trang chủ.
                 Response.Redirect("Home.aspx");
             }

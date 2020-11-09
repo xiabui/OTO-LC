@@ -1,0 +1,34 @@
+﻿.btn-add-cars {
+    background-color: #e2232e;
+    color: whitesmoke;
+    font-size: 14px;
+    border: none;
+    outline: none !important;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+    .btn-add-cars:hover {
+        background-color: black;
+        color: #e2232e;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: none;
+        outline: none !important;
+        width: 200px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+
+.btn-filter {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 35px;
+}
+
+.table td, .table th {
+    text-align: center;
+}

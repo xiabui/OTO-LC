@@ -8,35 +8,61 @@
     padding: 0px;
 }
 
-aside#detail {
-    width: 1200px;
-}
-
-.detail-image {
-    width: 600px;
-}
-
-.detail-right {
-    width: 500px;
-    float: right;
-    margin-top: -400px;
-}
-
 .detail-name {
     color: black;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .detail-price {
     color: #e2232e;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 700;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 
-.detail-content {
-    margin-top: 50px;
+.detail-content ul {
+    list-style: none;
 }
+
+    .detail-content ul li {
+        margin-bottom: 8px;
+        color: #666666;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+.btn-buy-cars {
+    background-color: #e2232e;
+    color: whitesmoke;
+    font-size: 20px;
+    border: none;
+    outline: none !important;
+    width: 200px;
+    height: 55px;
+    margin-bottom: 20px;
+}
+
+    .btn-buy-cars:hover {
+        background-color: black;
+        color: #e2232e;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: none;
+        outline: none !important;
+        width: 200px;
+        height: 55px;
+        margin-bottom: 20px;
+    }
+
+    .btn-buy-cars {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+    }

@@ -1,0 +1,37 @@
+﻿.province {
+    width: 100%;
+}
+
+.dropdown-menu {
+    width: 96%;
+}
+
+.btn-submit {
+    background-color: #e2232e;
+    border: none;
+    outline: none !important;
+    /* padding: 10px 20px 10px; */
+    width: 150px;
+    height: 55px;
+    margin-top: 20px;
+}
+
+    .btn-submit:hover {
+        background-color: black;
+        cursor: pointer;
+    }
+
+.btn-store {
+    width: 100%;
+}
+
+
+.text-gen {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.box {
+    height: 100px;
+}

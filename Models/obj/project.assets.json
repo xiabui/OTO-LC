@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\buiva\\onedrive\\documents\\visual studio 2017\\Projects\\Website LC\\Models\\Models.csproj",
+      "projectUniqueName": "W:\\Website LC\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\Users\\buiva\\onedrive\\documents\\visual studio 2017\\Projects\\Website LC\\Models\\Models.csproj",
+      "projectPath": "W:\\Website LC\\Models\\Models.csproj",
       "packagesPath": "C:\\Users\\buiva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\buiva\\onedrive\\documents\\visual studio 2017\\Projects\\Website LC\\Models\\obj\\",
+      "outputPath": "W:\\Website LC\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

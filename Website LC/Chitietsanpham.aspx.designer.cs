@@ -22,13 +22,13 @@ namespace Website_LC {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Image1 control.
+        /// imgProduct control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.Image imgProduct;
         
         /// <summary>
         /// lblProductName control.
@@ -56,6 +56,15 @@ namespace Website_LC {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblContryMade;
+        
+        /// <summary>
+        /// lblYearMade control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblYearMade;
         
         /// <summary>
         /// lblIsUsed control.
@@ -94,15 +103,6 @@ namespace Website_LC {
         protected global::System.Web.UI.WebControls.Label lblGasCap;
         
         /// <summary>
-        /// lblNumCap control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNumCap;
-        
-        /// <summary>
         /// lblEngineenType control.
         /// </summary>
         /// <remarks>
@@ -110,5 +110,14 @@ namespace Website_LC {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblEngineenType;
+        
+        /// <summary>
+        /// lblNumCap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNumCap;
     }
 }

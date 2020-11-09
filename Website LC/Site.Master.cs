@@ -28,7 +28,9 @@ namespace Website_LC
 
             bool isLogin = Session["signed_in"]?.ToString() == null ? false
                            : Session["signed_in"].ToString() == "1" ? true : false;
-
+            bool isGuess = Session["user_role"]?.ToString() == null ? true
+                           : Session["user_role"].ToString() == "sller" || Session["user_role"].ToString() == "admin" 
+                           ? false : true;
             //Mặc định isLogin khi kiểm tra trong () nếu == true thì đúng.
             if (isLogin)
             {
@@ -40,6 +42,31 @@ namespace Website_LC
                 hplRegister.Visible = hplSignIn.Visible = true;
                 hplProfile.Visible = hplSignOut.Visible = false;
             }
+
+            if (isGuess)
+            {
+                hplSellCar.Text = "SELL YOUR CAR";
+            }
+            else
+            {
+                hplSellCar.Text = "MANAGE YOUR CARS";
+            }
         }
-	}
+
+        protected void SellCarClick(object sender, EventArgs e)
+        {
+            bool isGuess = Session["user_role"]?.ToString() == null ? true
+                           : Session["user_role"].ToString() == "sller" || Session["user_role"].ToString() == "admin"
+                           ? false : true;
+            if (isGuess)
+            {
+                Response.Write("<script>alert('This feature still in development!');</script>");
+            }
+            else
+            {
+                Response.Redirect("Product.aspx");
+            }
+        }
+
+    }
 }

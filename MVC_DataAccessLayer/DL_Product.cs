@@ -14,19 +14,44 @@ namespace MVC_DataAccessLayer
     {
         private string connectionString = ConfigurationManager.ConnectionStrings["conStr"].ConnectionString;
         
-        public void AddProduct(Product product)
+        public void AddProduct(ProductModel product, int username)
         {
             using (SqlConnection conn = new SqlConnection(this.connectionString))
             {
                 SqlCommand cmd = new SqlCommand("proc_add_product", conn);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@product_name", product.ProductName);
-                cmd.Parameters.AddWithValue("@has_event", product.HasEvent);
                 cmd.Parameters.AddWithValue("@cat_id", product.CatId);
+                cmd.Parameters.AddWithValue("@price", product.Price);
                 cmd.Parameters.AddWithValue("@storage_amount", product.Amount);
                 cmd.Parameters.AddWithValue("@product_image", product.ProductImage);
                 cmd.Parameters.AddWithValue("@used", product.Used);
-                cmd.Parameters.AddWithValue("@price", string.Format("{0:#,###,###}", Convert.ToDecimal(product.Price)));
+                cmd.Parameters.AddWithValue("@run_mile", product.MileAge);
+                cmd.Parameters.AddWithValue("@size_height", product.Height);
+                cmd.Parameters.AddWithValue("@size_long", product.Long);
+                cmd.Parameters.AddWithValue("@size_wide", product.Wide);
+                cmd.Parameters.AddWithValue("@size_long_wheelbase", product.LongWheelbase);
+                cmd.Parameters.AddWithValue("@size_front_wide_wheelbase", product.FrontWideWheelbase);
+                cmd.Parameters.AddWithValue("@size_back_wide_wheelbase", product.BackWideWheelbase);
+                cmd.Parameters.AddWithValue("@weight_non_load", product.WeightNonLoad);
+                cmd.Parameters.AddWithValue("@number_capacity", product.NumberCapacity);
+                cmd.Parameters.AddWithValue("@engineen_type", product.EngineenType);
+                cmd.Parameters.AddWithValue("@cylinder_capacity", product.CylinderCapacity);
+                cmd.Parameters.AddWithValue("@maximum_power", product.MaximumPower);
+                cmd.Parameters.AddWithValue("@maximum_torque", product.MaximumTorque);
+                cmd.Parameters.AddWithValue("@gas_capacity", product.GasCapacity);
+                cmd.Parameters.AddWithValue("@power_steering", product.PowerSteering);
+                cmd.Parameters.AddWithValue("@gas_consumption_avg", product.GasConsumptionAvg);
+                cmd.Parameters.AddWithValue("@number_of_color", product.NumberOfColor);
+                cmd.Parameters.AddWithValue("@day_light", product.DayLight);
+                cmd.Parameters.AddWithValue("@light_sensor", product.LightSensor);
+                cmd.Parameters.AddWithValue("@fog_light", product.FogLight);
+                cmd.Parameters.AddWithValue("@washing_light", product.WashLight);
+                cmd.Parameters.AddWithValue("@wheel_size", product.WheelSize);
+                cmd.Parameters.AddWithValue("@sit_material", product.SitMaterial);
+                cmd.Parameters.AddWithValue("@camera", product.Camera);
+                cmd.Parameters.AddWithValue("@year_made", product.YearMade);
+                cmd.Parameters.AddWithValue("@user_id", username);
                 try
                 {
                     conn.Open();
@@ -46,9 +71,9 @@ namespace MVC_DataAccessLayer
 
         }
 
-        public Product GetDetailProductWithId(int productID)
+        public ProductModel GetDetailProductWithId(int productID)
         {
-            Product product = new Product();
+            ProductModel product = new ProductModel();
             using (SqlConnection conn = new SqlConnection(this.connectionString))
             {
                 SqlCommand cmd = new SqlCommand("proc_get_product_spec_with_id", conn);
@@ -62,13 +87,14 @@ namespace MVC_DataAccessLayer
                     product.ProductName = rdr["product_name"].ToString();
                     product.ProductImage = rdr["product_image"].ToString();
                     product.Price = string.Format("{0:#,###,###}", Convert.ToDecimal(rdr["price"].ToString()));
-                    product.From = rdr["coutry_made"].ToString();
+                    product.CountryMade = rdr["coutry_made"].ToString();
                     product.Used = bool.Parse(rdr["used"].ToString());
                     product.CatName = rdr["cat_name"].ToString();
                     product.MileAge = float.Parse(rdr["run_mile"].ToString());
-                    product.GasCap = float.Parse(rdr["gas_capacity"].ToString());
-                    product.NumberCap = int.Parse(rdr["number_capacity"].ToString());
+                    product.GasCapacity = float.Parse(rdr["gas_capacity"].ToString());
+                    product.NumberCapacity = int.Parse(rdr["number_capacity"].ToString());
                     product.EngineenType = rdr["engineen_type"].ToString();
+                    product.YearMade = int.Parse(rdr["year_made"].ToString());
                     conn.Close();
                 }
                 catch (Exception e)
@@ -82,6 +108,29 @@ namespace MVC_DataAccessLayer
 
             }
             return product;
+        }
+
+        public DataTable GetDetailProductWithUserId(int userID)
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da;
+            using (SqlConnection conn = new SqlConnection(this.connectionString))
+            {
+                using(var cmd = new SqlCommand
+                {
+                    Connection = conn,
+                    CommandType = CommandType.StoredProcedure
+                })
+                {
+                    cmd.CommandText = "proc_get_product_with_userid";
+                    cmd.Parameters.AddWithValue("@userid", userID);
+                    conn.Open();
+                    da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                    conn.Close();
+                }
+            }
+            return dt;
         }
     }
 }

@@ -58,8 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DL_Catogory.cs" />
+    <Compile Include="DL_Order.cs" />
     <Compile Include="DL_Product.cs" />
     <Compile Include="DL_Login.cs" />
+    <Compile Include="DL_Store.cs" />
+    <Compile Include="DL_User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

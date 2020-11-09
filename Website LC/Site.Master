@@ -6,13 +6,15 @@
 <head runat="server"> 
     <meta charset="utf-8"/>
     <title>LC</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="~/Styles/style.css"/>
-    <link rel="stylesheet" type="text/css" href="~/Styles/style-detail.css"/>
     <link rel="stylesheet" type="text/css" href="~/Styles/style-home.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        document.getElementById("defaultOpen").click();
         function openTab(evt, tabName) {
             // Declare all variables
             var i, tabcontent, tablinks;
@@ -20,7 +22,7 @@
             // Get all elements with class="tabcontent" and hide them
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
-                 tabcontent[i].style.display = "none";
+                tabcontent[i].style.display = "none";
             }
 
             // Get all elements with class="tablinks" and remove the class "active"
@@ -33,7 +35,6 @@
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
         }
-        document.getElementById("defaultOpen").click();
     </script>
     <asp:ContentPlaceHolder ID="head" runat="server">  
     </asp:ContentPlaceHolder>  
@@ -48,21 +49,32 @@
                 <asp:HyperLink ID="hplSignOut" runat="server" Visible="False">SIGN OUT</asp:HyperLink>
             </div>
             <div class="btn-sell">
-                <button><a href="#"><i class="fas fa-plus-circle"></i>SELL YOUR USED CAR</a></button>
+                <button runat="server" onServerClick="SellCarClick">
+                    <asp:HyperLink ID="hplSellCar" runat="server">SELL YOUR CARS</asp:HyperLink>
+                </button>
             </div>
 
         </header>
 
-        <nav>
+        <nav class="top-nav navbar navbar-expand-lg navbar-light">
             <div id="subnav">
-                <ul>
-                    <li class="btn"><a href="Home.aspx">FIND A CAR</a></li>
-                    <li class="btn"><a href="usedcar.html">USED CARS</a></li>
-                    <li class="btn dropdown"><a href="newcars.html" class="drop-btn">NEW CARS</a></li>
-                    <li class="btn"><a href="contacts.html">CONTACTS</a></li>
-                    <li class="btn"><a href="Products.aspx">PRODUCTS</a></li>
-                </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item btn">
+                        <a href="Home.aspx">FIND A CAR</a>
+                    </li>
+                
+                    <li class="nav-item btn">
+                        <a href="used-car.html">USED CARS</a>
+                    </li>
 
+                    <li class="nav-item btn dropdown">
+                        <a href="new-car.html" class="drop-btn">NEW CARS</a>
+                    </li>
+
+                    <li class="nav-item btn">
+                        <a href="contacts.html">CONTACTS</a>
+                    </li>
+                </ul>
             </div>
         </nav>
 
@@ -79,7 +91,7 @@
             </div>
             <div class="footer-right">
                 <ul>
-                    <li><a href="home.html">FIND A CAR</a></li>
+                    <li><a href="Home.aspx">FIND A CAR</a></li>
                     <li><a href="usedcars.html">USED CARS</a></li>
                     <li><a href="newcars.html">NEW CARS</a></li>
                     <li><a href="parts.html">PARTS</a></li>
