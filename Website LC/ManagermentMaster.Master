@@ -55,11 +55,7 @@
             <div id="subnav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active btn"><a href="Product.aspx">QUẢN LÝ XE</a></li>
-                    <li class="nav-item btn"><a href="account.html">QUẢN LÝ TÀI KHOẢN</a></li>
-
-                    <li class="nav-item btn dropdown"><a href="seller.html" class="drop-btn">QUẢN LÝ MUA BÁN</a>
-                    </li>
-                    <li class="nav-item btn"><a href="customer.html">QUẢN LÝ KHÁCH HÀNG</a></li>
+                    <li class="nav-item btn"><a href="Ship.aspx">QUẢN LÝ GIAO NHẬN</a></li>
                 </ul>
             </div>
         </nav>

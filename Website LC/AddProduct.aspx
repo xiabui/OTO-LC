@@ -4,7 +4,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="body">
-        <form action="product.html">
             <div class="container pt-4 px-0">
                 <div class="row d-flex justify-content-between">
                     <div class="col-3 text-align-center mr-2">
@@ -23,29 +22,29 @@
                         <div>
                             <table class="table table-borderless">
                                 <thead class="thead-dark">
-                                    <th colspan="2">THÔNG TIN CHUNG</th>
+                                    <th colspan="2">GENERAL INFOMATION</th>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td class="text-left" colspan="2">
                                             <div class="form-group mb-3">
-                                                <label>Tên xe:</label>
-                                                <asp:TextBox ID="txtProductName" runat="server" placeholder="Nhập tên xe" CssClass="form-control"></asp:TextBox>
+                                                <label>Product name:</label>
+                                                <asp:TextBox ID="txtProductName" runat="server" placeholder="Enter product name" CssClass="form-control"></asp:TextBox>
                                             </div>
 
                                             <div class="form-group mb-3">
-                                                <label>Xuất xứ:</label>
-                                                <asp:TextBox ID="txtXuatXu" runat="server" placeholder="Nhập xuất xứ xe" CssClass="form-control"></asp:TextBox>
+                                                <label>Origin:</label>
+                                                <asp:TextBox ID="txtXuatXu" runat="server" placeholder="Enter product origin" CssClass="form-control"></asp:TextBox>
                                             </div>
 
                                             <div class="form-group mb-3">
-                                                <label>Năm sản xuất: </label>
-                                                <asp:TextBox ID="txtNamSX" runat="server" placeholder="Nhập năm sản xuất xe" CssClass="form-control"></asp:TextBox>
+                                                <label>DoM: </label>
+                                                <asp:TextBox ID="txtNamSX" runat="server" placeholder="Enter date of manufacture" CssClass="form-control"></asp:TextBox>
                                             </div>
 
                                             <div class="form-group mb-3">
-                                                <label>Giá bán: </label>
-                                                <asp:TextBox ID="txtGiaBan" runat="server" placeholder="Nhập giá bán xe" CssClass="form-control"></asp:TextBox>
+                                                <label>Price: </label>
+                                                <asp:TextBox ID="txtGiaBan" runat="server" placeholder="Enter product price" CssClass="form-control"></asp:TextBox>
                                             </div>
                                         </td>
                                         
@@ -53,31 +52,31 @@
                                     <tr>
                                         <td class="text-left">
                                             <div class="form-group mb-3">
-                                                <label>Loại xe: </label>
+                                                <label>Category: </label>
                                                 <div class="dropdown">
                                                     <asp:DropDownList ID="ddlCarCat" runat="server" CssClass="btn dropdown-toggle btn-status"></asp:DropDownList>
                                                 </div>
                                             </div>
                                             
                                             <div class="form-group mb-3">
-                                                <label>Số lượng xe: </label>
-                                                <asp:TextBox ID="txtAmount" runat="server" placeholder="Nhập số km đã chạy" CssClass="form-control"></asp:TextBox>
+                                                <label>Amount: </label>
+                                                <asp:TextBox ID="txtAmount" runat="server" placeholder="Enter product amount" CssClass="form-control"></asp:TextBox>
                                             </div>
                                         </td>
                                         <td class="text-left">
                                             <div class="form-group mb-3">
-                                                <label>Tình trạng xe: </label>
+                                                <label>Status: </label>
                                                 <div class="dropdown">
                                                     <asp:DropDownList ID="ddlStatus" runat="server" CssClass="btn dropdown-toggle btn-status">
-                                                        <asp:ListItem Value="false">Xe mới</asp:ListItem>
-                                                        <asp:ListItem Value="true">Xe cũ</asp:ListItem>
+                                                        <asp:ListItem Value="false">Used</asp:ListItem>
+                                                        <asp:ListItem Value="true">New</asp:ListItem>
                                                     </asp:DropDownList>
                                                 </div>
                                             </div>
                                             
                                             <div class="form-group mb-3">
-                                                <label>Số km đã chạy: </label>
-                                                <asp:TextBox ID="txtRunMile" runat="server" placeholder="Nhập số km đã chạy" CssClass="form-control"></asp:TextBox>
+                                                <label>Run mile: </label>
+                                                <asp:TextBox ID="txtRunMile" runat="server" placeholder="Enter product run mile" CssClass="form-control"></asp:TextBox>
                                             </div>
                                         </td>
                                     </tr>
@@ -88,69 +87,69 @@
                             <div class="col-6">
                                 <table class="table table-borderless">
                                     <thead class="thead-dark">
-                                        <th>THÔNG SỐ CHUNG</th>
+                                        <th>SPECS</th>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td class="text-left">
                                                 <div class="form-group mb-3">
-                                                    <label>Kích thước xe:</label>
-                                                    <asp:TextBox ID="txtSize" runat="server" placeholder="Chiều dài x Chiều rộng x Chiều cao" CssClass="form-control"></asp:TextBox>
+                                                    <label>Product size:</label>
+                                                    <asp:TextBox ID="txtSize" runat="server" placeholder="Long x Width x Height" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Chiều dài cơ sở:</label>
-                                                    <asp:TextBox ID="txtLongWheel" runat="server" placeholder="Nhập chiều dài cơ sở" CssClass="form-control"></asp:TextBox>
+                                                    <label>Long wheelbase:</label>
+                                                    <asp:TextBox ID="txtLongWheel" runat="server" placeholder="Enter long wheelbase" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Chiều rộng cơ sở:</label>
-                                                    <asp:TextBox ID="txtLength" runat="server" placeholder="Nhập rộng dài cơ sở trước x chiều rộng cơ sở sau" CssClass="form-control"></asp:TextBox>
+                                                    <label>Wide wheelbase:</label>
+                                                    <asp:TextBox ID="txtLength" runat="server" placeholder="Front wide wheelbase x Back wide wheelbase" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Trọng lượng không tải: </label>
-                                                    <asp:TextBox ID="txtHeavy" runat="server" placeholder="Nhập trọng lượng không tải (kg)" CssClass="form-control"></asp:TextBox>
+                                                    <label>Nonload weight: </label>
+                                                    <asp:TextBox ID="txtHeavy" runat="server" placeholder="Enter nonload weight (kg)" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Số chỗ ngồi:</label>
-                                                    <asp:TextBox ID="txtSeat" runat="server" placeholder="Nhập số lượng chỗ ngồi" CssClass="form-control"></asp:TextBox>
+                                                    <label>Seat number:</label>
+                                                    <asp:TextBox ID="txtSeat" runat="server" placeholder="Enter number of seat" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Loại động cơ:</label>
-                                                    <asp:TextBox ID="txtEngineenType" runat="server" placeholder="Nhập Loại động cơ xe" CssClass="form-control"></asp:TextBox>
+                                                    <label>Engineen type:</label>
+                                                    <asp:TextBox ID="txtEngineenType" runat="server" placeholder="Enter engineen type" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Dung tích xilanh: </label>
-                                                    <asp:TextBox ID="txtXiLanh" runat="server" placeholder="Nhập vào dung tích xi lanh" CssClass="form-control"></asp:TextBox>
+                                                    <label>Cylinder capacity:</label>
+                                                    <asp:TextBox ID="txtXiLanh" runat="server" placeholder="Enter cylinder capacity" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Công suất cực đại:</label>
-                                                    <asp:TextBox ID="txtMaxPower" runat="server" placeholder="Nhập vào công suất cực đại" CssClass="form-control"></asp:TextBox>
+                                                    <label>Max power:</label>
+                                                    <asp:TextBox ID="txtMaxPower" runat="server" placeholder="Enter max power" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Momen xoắn cực đại:</label>
-                                                    <asp:TextBox ID="txtMomen" runat="server" placeholder="Nhập vào momen xoắn cực đại" CssClass="form-control"></asp:TextBox>
+                                                    <label>Maximum torque:</label>
+                                                    <asp:TextBox ID="txtMomen" runat="server" placeholder="Enter maximum torque" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Dung tích thùng nhiên liệu: </label>
-                                                    <asp:TextBox ID="txtFuel" runat="server" placeholder="Nhập vào dung tích thùng nhiên liệu" CssClass="form-control"></asp:TextBox>
+                                                    <label>Gasoline capacity: </label>
+                                                    <asp:TextBox ID="txtFuel" runat="server" placeholder="Enter gasoline capacity" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Giảm xóc:</label>
-                                                    <asp:TextBox ID="txtGiamXoc" runat="server" placeholder="Nhập vào loại giảm xóc" CssClass="form-control"></asp:TextBox>
+                                                    <label>Shock absorbers:</label>
+                                                    <asp:TextBox ID="txtGiamXoc" runat="server" placeholder="Enter shock absorbers" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Tiêu thụ nhiên liệu trung bình:</label>
-                                                    <asp:TextBox ID="txtNhienLieu" runat="server" placeholder="Nhập mức độ tiêu thụ nhiên liệu" CssClass="form-control"></asp:TextBox>
+                                                    <label>Average fuel consumption:</label>
+                                                    <asp:TextBox ID="txtNhienLieu" runat="server" placeholder="Enter average fuel consumption" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                             </td>
@@ -162,49 +161,49 @@
                             <div class="col-6">
                                 <table class="table table-borderless">
                                     <thead class="thead-dark">
-                                        <th>NGOẠI THẤT</th>
+                                        <th>EXTERIOR</th>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td class="text-left">
                                                 <div class="form-group mb-3">
-                                                    <label>Số lượng màu:</label>
-                                                    <asp:TextBox ID="txtColor" runat="server" placeholder="Nhập số lượng màu" CssClass="form-control"></asp:TextBox>
+                                                    <label>Number of Colour:</label>
+                                                    <asp:TextBox ID="txtColor" runat="server" placeholder="Enter number of colour" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Đèn ban ngày:</label>
-                                                    <asp:TextBox ID="txtDayLight" runat="server" placeholder="Nhập mô tả" CssClass="form-control"></asp:TextBox>
+                                                    <label>Day light:</label>
+                                                    <asp:TextBox ID="txtDayLight" runat="server" placeholder="Enter desciption" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Cảm biến ánh sáng: </label>
-                                                    <asp:TextBox ID="txtLightSensor" runat="server" placeholder="Nhập mô tả" CssClass="form-control"></asp:TextBox>
+                                                    <label>Light sensor: </label>
+                                                    <asp:TextBox ID="txtLightSensor" runat="server" placeholder="Enter desciption" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Đèn sương mù:</label>
-                                                    <asp:TextBox ID="txtFogLight" runat="server" placeholder="Nhập mô tả" CssClass="form-control"></asp:TextBox>
+                                                    <label>Fog Light:</label>
+                                                    <asp:TextBox ID="txtFogLight" runat="server" placeholder="Enter desciption" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Rửa đèn pha:</label>
-                                                    <asp:TextBox ID="txtLightWash" runat="server" placeholder="Nhập mô tả" CssClass="form-control"></asp:TextBox>
+                                                    <label>Wash light:</label>
+                                                    <asp:TextBox ID="txtLightWash" runat="server" placeholder="Enter desciption" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Kích thước mâm: </label>
-                                                    <asp:TextBox ID="txtWheelSize" runat="server" placeholder="Nhập kích thước mâm" CssClass="form-control"></asp:TextBox>
+                                                    <label>Wheel size: </label>
+                                                    <asp:TextBox ID="txtWheelSize" runat="server" placeholder="Enter wheel size" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Chất liệu ghế:</label>
-                                                    <asp:TextBox ID="txtSeatMaterial" runat="server" placeholder="Nhập chất liệu ghế" CssClass="form-control"></asp:TextBox>
+                                                    <label>Seat material:</label>
+                                                    <asp:TextBox ID="txtSeatMaterial" runat="server" placeholder="Enter seat material" CssClass="form-control"></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label>Camera 365:</label>
-                                                    <asp:TextBox ID="txtCamera" runat="server" placeholder="Nhập mô tả" CssClass="form-control"></asp:TextBox>
+                                                    <label>Number of Camera:</label>
+                                                    <asp:TextBox ID="txtCamera" runat="server" placeholder="Enter desciption" CssClass="form-control"></asp:TextBox>
                                                 </div>
                                             </td>
                                         </tr>
@@ -213,10 +212,9 @@
                             </div>
                         </div>
 
-                        <asp:Button ID="btnSubmit" runat="server" Text="HOÀN TẤT" CssClass="btn-add-cars" OnClick="btnSubmit_Click" />
+                        <asp:Button ID="btnSubmit" runat="server" Text="FINISH" CssClass="btn-add-cars" OnClick="btnSubmit_Click" />
                     </div>
                 </div>
             </div>
-        </form>
     </div>
 </asp:Content>

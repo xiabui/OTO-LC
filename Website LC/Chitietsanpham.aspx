@@ -22,44 +22,44 @@
                                 <asp:Label ID="lblProductPrice" runat="server" Text="" CssClass="detail-price"></asp:Label>
                             </div>
                             <div>
-                                <asp:Button runat="server" Text="LIÊN HỆ MUA XE" CssClass="btn-buy-cars" OnClick="Unnamed1_Click"></asp:Button>
+                                <asp:Button runat="server" Text="ORDER THIS CAR" CssClass="btn-buy-cars" OnClick="Unnamed1_Click"></asp:Button>
                             </div>
                             <div class="mb-3">
-                                <h4><b>THÔNG SỐ XE</b></h4>
+                                <h4><b>PRODUCT SPECS</b></h4>
                             </div>
                             <div class="detail-content">
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col">Tùy chọn</th>
-                                            <th scope="col">Thông số</th>
-                                            <th scope="col">Tùy chọn</th>
-                                            <th scope="col">Thông số</th>
+                                            <th scope="col">Options</th>
+                                            <th scope="col">Specs</th>
+                                            <th scope="col">Options</th>
+                                            <th scope="col">Specs</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Xuất xứ:</td>
+                                            <td>Origin:</td>
                                             <td><asp:Label ID="lblContryMade" runat="server"></asp:Label></td>
-                                            <td>Năm sản xuất:</td>
+                                            <td>DoM:</td>
                                             <td><asp:Label ID="lblYearMade" runat="server"></asp:Label></td>
                                         </tr>
                                         <tr>
-                                            <td>Tình trạng:</td>
+                                            <td>Status:</td>
                                             <td><asp:Label ID="lblIsUsed" runat="server"></asp:Label></td>
-                                            <td>Loại xe:</td>
+                                            <td>Category:</td>
                                             <td><asp:Label ID="lblCarType" runat="server"></asp:Label></td>
                                         </tr>
                                         <tr>
-                                            <td>Số km (đã chạy):</td>
+                                            <td>Run mile:</td>
                                             <td><asp:Label ID="lblMileage" runat="server"></asp:Label></td>
-                                            <td>Dung tích xăng:</td>
+                                            <td>Gasoline capacity:</td>
                                             <td><asp:Label ID="lblGasCap" runat="server"></asp:Label></td>
                                         </tr>
                                         <tr>
-                                            <td>Loại động cơ:</td>
+                                            <td>Engineen:</td>
                                             <td><asp:Label ID="lblEngineenType" runat="server"></asp:Label></td>
-                                            <td>Số chỗ ngồi:</td>
+                                            <td>Seat number:</td>
                                             <td><asp:Label ID="lblNumCap" runat="server"></asp:Label></td>
                                         </tr>
                                     </tbody>

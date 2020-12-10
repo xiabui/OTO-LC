@@ -132,5 +132,123 @@ namespace MVC_DataAccessLayer
             }
             return dt;
         }
+
+        public DataTable GetProductFilter(int maxYear, int minYear, string maxPrice, string minPrice, bool used)
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da;
+            using (SqlConnection conn = new SqlConnection(this.connectionString))
+            {
+                using (var cmd = new SqlCommand
+                {
+                    Connection = conn,
+                    CommandType = CommandType.StoredProcedure
+                })
+                {
+                    cmd.CommandText = "proc_product_filter";
+                    cmd.Parameters.AddWithValue("@maxyear", maxYear);
+                    cmd.Parameters.AddWithValue("@minyear", minYear);
+                    cmd.Parameters.AddWithValue("@maxprice", maxPrice);
+                    cmd.Parameters.AddWithValue("@minprice", minPrice);
+                    cmd.Parameters.AddWithValue("@used", used);
+                    conn.Open();
+                    da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                    conn.Close();
+                }
+            }
+            return dt;
+        }
+
+        public DataTable GetProduct(bool used)
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da;
+            using (SqlConnection conn = new SqlConnection(this.connectionString))
+            {
+                using (var cmd = new SqlCommand
+                {
+                    Connection = conn,
+                    CommandType = CommandType.StoredProcedure
+                })
+                {
+                    cmd.CommandText = "proc_get_product";
+                    cmd.Parameters.AddWithValue("@used", used);
+                    conn.Open();
+                    da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                    conn.Close();
+                }
+            }
+            return dt;
+        }
+
+        public DataTable SearchProduct(bool used, string keyword)
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da;
+            using (SqlConnection conn = new SqlConnection(this.connectionString))
+            {
+                using (var cmd = new SqlCommand
+                {
+                    Connection = conn,
+                    CommandType = CommandType.StoredProcedure
+                })
+                {
+                    cmd.CommandText = "proc_get_product_by_keyword";
+                    cmd.Parameters.AddWithValue("@used", used);
+                    cmd.Parameters.AddWithValue("@keyword", keyword);
+                    conn.Open();
+                    da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                    conn.Close();
+                }
+            }
+            return dt;
+        }
+
+        public DataTable GetPagingProduct(int pageIndex)
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da;
+            using (SqlConnection conn = new SqlConnection(this.connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand("proc_get_car_new", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@PageIndex", pageIndex);
+                    cmd.Parameters.AddWithValue("@PageSize", 6);
+                    cmd.Parameters.AddWithValue("@RecordCount", 4);
+                    conn.Open();
+                    da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                    conn.Close();
+                }
+            }
+
+            return dt;
+        }
+
+        public DataTable GetPagingProductOld(int pageIndex)
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da;
+            using (SqlConnection conn = new SqlConnection(this.connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand("proc_get_car_used", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@PageIndex", pageIndex);
+                    cmd.Parameters.AddWithValue("@PageSize", 6);
+                    cmd.Parameters.AddWithValue("@RecordCount", 4);
+                    conn.Open();
+                    da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                    conn.Close();
+                }
+            }
+
+            return dt;
+        }
     }
 }

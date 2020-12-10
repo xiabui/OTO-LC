@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Website_LC.Home" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
-    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </asp:Content>  
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="body">
@@ -11,32 +14,8 @@
                         <form class="form-make pb-3 pt-3" id="formBannerLeft" runat="server">
                             <div class="form-group">
                                 <div class="d-flex justify-content-between align-items-center mx-3">
-                                    <label class="form-label w-50 mt-3">MAKE:</label>
-                                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-input w-50 my-2">
-                                        <asp:ListItem>Select</asp:ListItem>
-                                        <asp:ListItem>Roll Royce</asp:ListItem>
-                                        <asp:ListItem>Ford</asp:ListItem>
-                                        <asp:ListItem>Mitsubishi</asp:ListItem>
-                                    </asp:DropDownList>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="d-flex justify-content-between align-items-center mx-3">
-                                    <label class="form-label w-50 mt-3">MODEL:</label>
-                                    <asp:DropDownList ID="DropDownList2" runat="server" CssClass="form-input w-50 my-2">
-                                        <asp:ListItem>Select</asp:ListItem>
-                                        <asp:ListItem>Roll Royce</asp:ListItem>
-                                        <asp:ListItem>Ford</asp:ListItem>
-                                        <asp:ListItem>Mitsubishi</asp:ListItem>
-                                    </asp:DropDownList>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="d-flex justify-content-between align-items-center mx-3">
                                     <label class="form-label w-50 mt-3">MIN YEAR:</label>
-                                    <asp:DropDownList ID="DropDownList3" runat="server" CssClass="form-input form-input w-50 my-2">
+                                    <asp:DropDownList ID="ddlMinYear" runat="server" CssClass="form-input form-input w-50 my-2">
                                         <asp:ListItem>Select min year</asp:ListItem>
                                         <asp:ListItem>2017</asp:ListItem>
                                         <asp:ListItem>2015</asp:ListItem>
@@ -50,7 +29,7 @@
                             <div class="form-group">
                                 <div class="d-flex justify-content-between align-items-center mx-3">
                                     <label class="form-label w-50 mt-3">MAX YEAR:</label>
-                                    <asp:DropDownList ID="DropDownList4" runat="server" CssClass="form-input form-input w-50 my-2">
+                                    <asp:DropDownList ID="ddlMaxYear" runat="server" CssClass="form-input form-input w-50 my-2">
                                         <asp:ListItem>Select max year</asp:ListItem>
                                         <asp:ListItem>2020</asp:ListItem>
                                         <asp:ListItem>2018</asp:ListItem>
@@ -63,30 +42,18 @@
                             <div class="form-group">
                                 <div class="d-flex justify-content-between align-items-center mx-3">
                                     <label class="form-label w-50 mt-3">MIN PRICE:</label>
-                                    <asp:DropDownList ID="DropDownList5" runat="server" CssClass="form-input form-input w-50 my-2">
-                                        <asp:ListItem>Select min price</asp:ListItem>
-                                        <asp:ListItem>1B VND</asp:ListItem>
-                                        <asp:ListItem>800M VND</asp:ListItem>
-                                        <asp:ListItem>600M VND</asp:ListItem>
-                                        <asp:ListItem>400M VND</asp:ListItem>
-                                    </asp:DropDownList>
+                                    <asp:TextBox ID="txtMinPrice" runat="server" CssClass="form-control form-input w-50 my-2" placeholder="Min price..."></asp:TextBox>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <div class="d-flex justify-content-between align-items-center mx-3">
                                     <label class="form-label w-50 mt-3">MAX PRICE:</label>
-                                    <asp:DropDownList ID="DropDownList6" runat="server" CssClass="form-input form-input w-50 my-2">
-                                        <asp:ListItem>Select max price</asp:ListItem>
-                                        <asp:ListItem>100B VND</asp:ListItem>
-                                        <asp:ListItem>50B VND</asp:ListItem>
-                                        <asp:ListItem>20B VND</asp:ListItem>
-                                        <asp:ListItem>10B VND</asp:ListItem>
-                                    </asp:DropDownList>
+                                     <asp:TextBox ID="txtMaxPrice" runat="server" CssClass="form-control form-input w-50 my-2" placeholder="Max price..."></asp:TextBox>
                                 </div>
                             </div>
                             <div class="mx-3 mt-3">
-                                <button class="btn-submit align-text-center" type="submit">SUBMIT</button>
+                                <asp:Button ID="btnSubmit" runat="server" Text="SUBMIT" CssClass="btn-submit align-text-center" OnClick="btnSubmit_Click" />
                             </div>
                             
                         </form>
@@ -115,17 +82,48 @@
                     </div>
                 </div>
                 <div class="col-9 float-right">
-                    <div class="banner">
-                        <div class="banner-img">
-                            <img src="Images/roll-royce.jpg" alt="">
-                        </div>
-                        <div class="banner-text-container fixed-bottom">
-                            <div class="title px-3 pt-3">A NEW CAR FOR NEW LIFE</div>
-                            <div class="banner-text-content px-3 py-3">Mo ta: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Delectus repellat eos sunt iste praesentium ab ducimus reiciendis libero, suscipit esse
-                                nostrum fugiat vero, nisi dolorum ullam quisquam officiis autem ipsum. Reiciendis
-                                quas dignissimos adipisci velit atque, omnis facilis, laboriosam nesciunt rem
+                    <div class="carou">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                          <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                          </ul>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Images/roll-royce.jpg" alt="" width="100%">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <div class="title px-3 pt-3">A NEW CAR FOR NEW LIFE</div>
+                                    <div class="banner-text-content px-3 py-3">Mo ta: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Delectus repellat eos sunt iste praesentium ab ducimus reiciendis libero, suscipit esse
+                                        nostrum fugiat vero, nisi dolorum ullam quisquam officiis autem ipsum. Reiciendis
+                                        quas dignissimos adipisci velit atque, omnis facilis, laboriosam nesciunt rem
+                                    </div>
+                                </div>
                             </div>
+                            <div class="carousel-item">
+                                <img src="Images/roll-royce.jpg" alt="" width="100%">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <div class="title px-3 pt-3">A NEW CAR FOR NEW LIFE</div>
+                                    <div class="banner-text-content px-3 py-3">Mo ta: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Delectus repellat eos sunt iste praesentium ab ducimus reiciendis libero, suscipit esse
+                                        nostrum fugiat vero, nisi dolorum ullam quisquam officiis autem ipsum. Reiciendis
+                                        quas dignissimos adipisci velit atque, omnis facilis, laboriosam nesciunt rem
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Images/roll-royce.jpg" alt="" width="100%">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <div class="title px-3 pt-3">A NEW CAR FOR NEW LIFE</div>
+                                    <div class="banner-text-content px-3 py-3">Mo ta: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Delectus repellat eos sunt iste praesentium ab ducimus reiciendis libero, suscipit esse
+                                        nostrum fugiat vero, nisi dolorum ullam quisquam officiis autem ipsum. Reiciendis
+                                        quas dignissimos adipisci velit atque, omnis facilis, laboriosam nesciunt rem
+                                    </div>
+                                </div>
+                            </div>
+                          
                         </div>
                     </div>
                     
@@ -136,53 +134,49 @@
                     </div>
 
                     <div id="LASTED-NEW-CARS" class="tabcontent">
-                        <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
-                            <ItemTemplate>
-                                <div class="car">
-                                    <img class="car-img" src="Images/<%# Eval("product_image")%>">
-                                    <p class="price"><span class="price-span"><%# Eval("price")%></span></p>
-                                    <p class="name-car"><a href="Chitietsanpham.aspx?id=<%# Eval("product_id")%>"><%# Eval("product_name")%></a>
-                                    </p>
-                                    <p class="car-description">Storage amount: <%# Eval("storage_amount")%>.</p>
-                                </div>
-                            </ItemTemplate>
-                         </asp:ListView>
-                        <br />
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conStr %>" SelectCommand="SELECT * FROM [PRODUCT] WHERE ([used] = @used)">
-                            <SelectParameters>
-                                <asp:Parameter DefaultValue="False" Name="used" Type="Boolean" />
-                            </SelectParameters>
-                        </asp:SqlDataSource>
-                    </div>
+                        <div style="width: 100%;" class="mb-3">
+                            <asp:ListView ID="lstNew" runat="server" OnSelectedIndexChanged="lstNew_SelectedIndexChanged">
+                                <ItemTemplate>
+                                    <div class="car">
+                                        <img class="car-img" src="Images/<%# Eval("product_image")%>">
+                                        <p class="price"><span class="price-span"><%# Eval("price")%></span></p>
+                                        <p class="name-car"><a href="Chitietsanpham.aspx?id=<%# Eval("product_id")%>"><%# Eval("product_name")%></a>
+                                        </p>
+                                        <p class="car-description">Storage amount: <%# Eval("storage_amount")%>.</p>
+                                    </div>
+                                </ItemTemplate>
+                             </asp:ListView>
+                        </div>
+                        <div class="see-all-cars">
+                            <button class="btn-see-all-cars"><a href="NewCar.aspx">see all new cars</a></button>                    </div>
+                        </div>
                     <div id="LASTED-USED-CARS" class="tabcontent">
-                        <asp:ListView ID="ListView2" runat="server" DataSourceID="SqlDataSource2">
-                            <ItemTemplate>
-                                <div class="car">
-                                    <img class="car-img" src="Images/<%# Eval("product_image")%>">
-                                    <p class="price"><span class="price-span"><%# Eval("price", "{0:#,###,###}").ToString() %></span></p>
-                                    <p class="name-car"><a href="Chitietsanpham.aspx"><%# Eval("product_name")%></a>
-                                    </p>
-                                    <p class="car-description">Mileages: <%# Eval("run_mile")%>.</p>
-                                </div>
-                            </ItemTemplate>
-                         </asp:ListView>
-                    
-                        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:conStr %>" SelectCommand="SELECT * FROM [PRODUCT] WHERE ([used] = @used)">
-                            <SelectParameters>
-                                <asp:Parameter DefaultValue="True" Name="used" Type="Boolean" />
-                            </SelectParameters>
-                        </asp:SqlDataSource>
+                        <div style="width: 100%;" class="mb-3">
+                            <asp:ListView ID="lstUsed" runat="server" OnSelectedIndexChanged="lstUsed_SelectedIndexChanged">
+                                <ItemTemplate>
+                                    <div class="car">
+                                        <img class="car-img" src="Images/<%# Eval("product_image")%>">
+                                        <p class="price"><span class="price-span"><%# Eval("price", "{0:#,###,###}").ToString() %></span></p>
+                                        <p class="name-car"><a href="Chitietsanpham.aspx?id=<%# Eval("product_id")%>"><%# Eval("product_name")%></a>
+                                        </p>
+                                        <p class="car-description">Mileages: <%# Eval("run_mile")%>.</p>
+                                    </div>
+                                </ItemTemplate>
+                             </asp:ListView>
+                        </div>
+                        <div class="see-all-cars">
+                            <button class="btn-see-all-cars"><a href="UsedCar.aspx">see all used cars</a></button>
+                        </div>
                     </div>
 
                     <script>
                         document.getElementById("defaultOpen").click();
                     </script>
 
-                    <div class="see-all-cars">
-                        <button class="btn-see-all-cars"><a href="new-car.html">see all cars</a></button>
-                    </div>
+                    
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </asp:Content>

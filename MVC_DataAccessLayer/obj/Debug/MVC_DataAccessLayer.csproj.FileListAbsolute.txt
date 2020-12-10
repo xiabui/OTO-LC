@@ -217,13 +217,11 @@ W:\Website LC\MVC_DataAccessLayer\bin\Debug\System.Xml.XPath.dll
 W:\Website LC\MVC_DataAccessLayer\bin\Debug\System.Xml.XPath.XDocument.dll
 W:\Website LC\MVC_DataAccessLayer\bin\Debug\BCrypt.Net-Next.dll
 W:\Website LC\MVC_DataAccessLayer\bin\Debug\Models.dll
-W:\Website LC\MVC_DataAccessLayer\bin\Debug\MVC_BusinessEntities.dll
 W:\Website LC\MVC_DataAccessLayer\bin\Debug\System.Buffers.dll
 W:\Website LC\MVC_DataAccessLayer\bin\Debug\System.Memory.dll
 W:\Website LC\MVC_DataAccessLayer\bin\Debug\System.Numerics.Vectors.dll
 W:\Website LC\MVC_DataAccessLayer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 W:\Website LC\MVC_DataAccessLayer\bin\Debug\Models.pdb
-W:\Website LC\MVC_DataAccessLayer\bin\Debug\MVC_BusinessEntities.pdb
 W:\Website LC\MVC_DataAccessLayer\bin\Debug\BCrypt.Net-Next.xml
 W:\Website LC\MVC_DataAccessLayer\bin\Debug\System.Buffers.xml
 W:\Website LC\MVC_DataAccessLayer\bin\Debug\System.Memory.xml

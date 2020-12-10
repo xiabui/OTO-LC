@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Models;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using BC = BCrypt.Net.BCrypt;
 using System.Threading.Tasks;
 
 namespace MVC_DataAccessLayer
@@ -44,6 +46,61 @@ namespace MVC_DataAccessLayer
                 }
             }
             return id;
+        }
+
+        public void SignupAccount(User user)
+        {
+            using (SqlConnection conn = new SqlConnection(this.connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("proc_sign_up", conn);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@username", user.UserName);
+                cmd.Parameters.AddWithValue("@email", user.Email);
+                cmd.Parameters.AddWithValue("@password", BC.HashPassword(user.Password));
+
+                conn.Open();
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    conn.Close();
+                }        
+            }
+        }
+
+        public void AddContact(ContactModel contact)
+        {
+            using (SqlConnection conn = new SqlConnection(this.connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("proc_add_contact", conn);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@fullname", contact.Fullname);
+                cmd.Parameters.AddWithValue("@email", contact.Email);
+                cmd.Parameters.AddWithValue("@phone", contact.Phone);
+                cmd.Parameters.AddWithValue("@content", contact.Content);
+
+                conn.Open();
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
         }
     }
 }

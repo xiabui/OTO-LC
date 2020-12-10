@@ -64,15 +64,15 @@
                     </li>
                 
                     <li class="nav-item btn">
-                        <a href="used-car.html">USED CARS</a>
+                        <a href="UsedCar.aspx">USED CARS</a>
                     </li>
 
                     <li class="nav-item btn dropdown">
-                        <a href="new-car.html" class="drop-btn">NEW CARS</a>
+                        <a href="NewCar.aspx" class="drop-btn">NEW CARS</a>
                     </li>
 
                     <li class="nav-item btn">
-                        <a href="contacts.html">CONTACTS</a>
+                        <a href="Contact.aspx">CONTACTS</a>
                     </li>
                 </ul>
             </div>
@@ -92,9 +92,8 @@
             <div class="footer-right">
                 <ul>
                     <li><a href="Home.aspx">FIND A CAR</a></li>
-                    <li><a href="usedcars.html">USED CARS</a></li>
-                    <li><a href="newcars.html">NEW CARS</a></li>
-                    <li><a href="parts.html">PARTS</a></li>
+                    <li><a href="UsedCar.aspx">USED CARS</a></li>
+                    <li><a href="NewCar.aspx">NEW CARS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>

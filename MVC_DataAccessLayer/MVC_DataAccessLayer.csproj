@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DL_Bill.cs" />
     <Compile Include="DL_Catogory.cs" />
     <Compile Include="DL_Order.cs" />
     <Compile Include="DL_Product.cs" />
@@ -70,10 +71,6 @@
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{8829beba-81f0-4e24-bd36-6cae8ddb82db}</Project>
       <Name>Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MVC_BusinessEntities\MVC_BusinessEntities.csproj">
-      <Project>{33de494a-c4c3-4982-9dbd-502de0d34207}</Project>
-      <Name>MVC_BusinessEntities</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

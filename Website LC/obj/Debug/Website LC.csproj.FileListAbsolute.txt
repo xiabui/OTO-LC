@@ -426,7 +426,6 @@ W:\Website LC\Website LC\bin\Microsoft.ScriptManager.MSAjax.dll
 W:\Website LC\Website LC\bin\Microsoft.ScriptManager.WebForms.dll
 W:\Website LC\Website LC\bin\Microsoft.Web.Infrastructure.dll
 W:\Website LC\Website LC\bin\Models.dll
-W:\Website LC\Website LC\bin\MVC_BusinessEntities.dll
 W:\Website LC\Website LC\bin\MVC_DataAccessLayer.dll
 W:\Website LC\Website LC\bin\Newtonsoft.Json.dll
 W:\Website LC\Website LC\bin\NLog.dll
@@ -451,7 +450,6 @@ W:\Website LC\Website LC\bin\System.Web.WebPages.dll
 W:\Website LC\Website LC\bin\System.Web.WebPages.Razor.dll
 W:\Website LC\Website LC\bin\WebGrease.dll
 W:\Website LC\Website LC\bin\Models.pdb
-W:\Website LC\Website LC\bin\MVC_BusinessEntities.pdb
 W:\Website LC\Website LC\bin\MVC_DataAccessLayer.pdb
 W:\Website LC\Website LC\bin\MVC_DataAccessLayer.dll.config
 W:\Website LC\Website LC\bin\Antlr3.Runtime.pdb

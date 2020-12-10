@@ -24,12 +24,12 @@ namespace Website_LC
 
                 imgProduct.ImageUrl = "Images/" + product.ProductImage;
                 lblProductName.Text = product.ProductName;
-                lblProductPrice.Text = product.Price + " VNĐ";
+                lblProductPrice.Text = product.Price + " VND";
                 lblContryMade.Text = product.CountryMade;
                 lblCarType.Text = product.CatName;
                 lblEngineenType.Text = product.EngineenType;
                 lblGasCap.Text = product.GasCapacity.ToString();
-                lblIsUsed.Text = product.Used ? "Xe cũ" : "Xe mới";
+                lblIsUsed.Text = product.Used ? "Used car" : "New car";
                 lblMileage.Text = product.MileAge.ToString();
                 lblNumCap.Text = product.NumberCapacity.ToString();
                 lblYearMade.Text = product.YearMade.ToString();
@@ -39,7 +39,7 @@ namespace Website_LC
 
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Order.aspx?id=" + productID);
+            Response.Redirect("Order.aspx?id=" + Request.QueryString["id"]);
         }
     }
 }

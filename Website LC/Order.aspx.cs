@@ -13,13 +13,13 @@ namespace Website_LC
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            int productID = int.Parse(Request.QueryString["id"]);
+            
             if (!IsPostBack)
             {
+                int productID = int.Parse(Request.QueryString["id"]);
                 DL_Product productDL = new DL_Product();
                 DL_Store storeDL = new DL_Store();
-                ProductModel product = new ProductModel();
-                product = productDL.GetDetailProductWithId(productID);
+                ProductModel product = productDL.GetDetailProductWithId(productID);
                 lblProductName.Text = product.ProductName;
                 lblGiaBan.Text = product.Price;
 
@@ -50,7 +50,7 @@ namespace Website_LC
             orderModel.ProductID = int.Parse(Request.QueryString["id"]);
 
             dlOrder.InsertData(orderModel);
-            Response.Write("<script>alert('Thành công')</script>");
+            Response.Redirect("ThankYou.aspx");
         }
     }
 }

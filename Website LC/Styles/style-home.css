@@ -362,7 +362,7 @@ select:focus {
 .banner {
     width: 100%;
     height: auto;
-    background-color: rgb(187, 247, 227);
+    /*background-color: rgb(187, 247, 227);*/
     position: relative;
 }
 

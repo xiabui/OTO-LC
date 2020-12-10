@@ -875,6 +875,7 @@
     <Content Include="CKFinderScripts\skins\neko\images\svg\white\arrow-left-white.svg" />
     <Content Include="CKFinderScripts\skins\neko\images\svg\white\arrow-right-white.svg" />
     <Content Include="CKFinderScripts\skins\neko\skin.js" />
+    <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -886,6 +887,7 @@
     <Content Include="Images\phone.png" />
     <Content Include="Images\rang_rover.jpg" />
     <Content Include="Images\roll-royce.jpg" />
+    <Content Include="NewCar.aspx" />
     <Content Include="Order.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -897,8 +899,16 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Ship.aspx" />
+    <Content Include="Signup.aspx" />
+    <Content Include="Styles\style-contact.css" />
+    <Content Include="Styles\style-new-car.css" />
     <Content Include="Styles\style-order.css" />
     <Content Include="Styles\style-product.css" />
+    <Content Include="Styles\style-signup.css" />
+    <Content Include="Styles\style-used-car.css" />
+    <Content Include="ThankYou.aspx" />
+    <Content Include="UsedCar.aspx" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -1002,6 +1012,13 @@
     <Compile Include="Chitietsanpham.aspx.designer.cs">
       <DependentUpon>Chitietsanpham.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controller\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1027,6 +1044,13 @@
     <Compile Include="ManagermentMaster.Master.designer.cs">
       <DependentUpon>ManagermentMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="NewCar.aspx.cs">
+      <DependentUpon>NewCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewCar.aspx.designer.cs">
+      <DependentUpon>NewCar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Order.aspx.cs">
       <DependentUpon>Order.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1042,6 +1066,20 @@
       <DependentUpon>Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ship.aspx.cs">
+      <DependentUpon>Ship.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ship.aspx.designer.cs">
+      <DependentUpon>Ship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1055,6 +1093,20 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYou.aspx.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThankYou.aspx.designer.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsedCar.aspx.cs">
+      <DependentUpon>UsedCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsedCar.aspx.designer.cs">
+      <DependentUpon>UsedCar.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -1137,10 +1189,6 @@
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{8829beba-81f0-4e24-bd36-6cae8ddb82db}</Project>
       <Name>Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MVC_BusinessEntities\MVC_BusinessEntities.csproj">
-      <Project>{33de494a-c4c3-4982-9dbd-502de0d34207}</Project>
-      <Name>MVC_BusinessEntities</Name>
     </ProjectReference>
     <ProjectReference Include="..\MVC_DataAccessLayer\MVC_DataAccessLayer.csproj">
       <Project>{f1f5cefd-d245-4540-b5d7-8d01f3e202b7}</Project>

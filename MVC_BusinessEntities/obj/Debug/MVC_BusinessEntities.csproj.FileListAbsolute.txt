@@ -4,3 +4,9 @@ C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\MVC_Bus
 C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\MVC_BusinessEntities\obj\Debug\MVC_BusinessEntities.csproj.CoreCompileInputs.cache
 C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\MVC_BusinessEntities\obj\Debug\MVC_BusinessEntities.dll
 C:\Users\buiva\onedrive\documents\visual studio 2017\Projects\Website LC\MVC_BusinessEntities\obj\Debug\MVC_BusinessEntities.pdb
+W:\Website LC\MVC_BusinessEntities\bin\Debug\MVC_BusinessEntities.dll
+W:\Website LC\MVC_BusinessEntities\bin\Debug\MVC_BusinessEntities.pdb
+W:\Website LC\MVC_BusinessEntities\obj\Debug\MVC_BusinessEntities.csprojAssemblyReference.cache
+W:\Website LC\MVC_BusinessEntities\obj\Debug\MVC_BusinessEntities.csproj.CoreCompileInputs.cache
+W:\Website LC\MVC_BusinessEntities\obj\Debug\MVC_BusinessEntities.dll
+W:\Website LC\MVC_BusinessEntities\obj\Debug\MVC_BusinessEntities.pdb
